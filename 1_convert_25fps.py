@@ -13,6 +13,8 @@ output_video_path = os.path.join(dataset_path, presenter_name, 'full_voice_25fps
 if not os.path.exists(output_video_path):
     os.makedirs(output_video_path)
 source_dir = os.listdir(input_video_path)
+if not source_dir:
+    raise FileNotFoundError(f"请将mp4视频文件放入{input_video_path}")
 
 
 def convert_25fps(name_video):
