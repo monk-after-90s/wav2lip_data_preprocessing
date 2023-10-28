@@ -3,13 +3,12 @@ import sys
 
 dataset_path = sys.argv[1]
 presenter_name = sys.argv[2]
-token = sys.argv[3]
 
 path = os.path.join(dataset_path, presenter_name)
-output_path = os.path.join(path, f'filelist_{token}')
+output_path = os.path.join(path, f'filelist')
 if not os.path.exists(output_path):
     os.makedirs(output_path)
-source_path = os.path.join(path, f'output_{token}')
+source_path = os.path.join(path, f'face_imgs')
 data_list = os.listdir(source_path)
 
 results = []
@@ -33,4 +32,3 @@ with open(f"{output_path}/raw_filelist.txt", "w") as f:
 with open(f"{output_path}/raw_filelist_errors.txt", "w") as f:
     for line in errors:
         f.write(line + "\n")
-        

@@ -127,7 +127,7 @@ your-folder-dataset
 ### 5. Create filelist structure for wav2lip training 
 
 ```bash
-python3 5_create_filelist.py <your-folder-dataset>
+python3 5_create_filelist.py <your-folder-dataset> <presenter_name>
 ```
 it will automatically create new folder name ***your-folder-dataset/filelist*** 
 
