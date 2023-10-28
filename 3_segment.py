@@ -7,7 +7,7 @@ dataset_path = sys.argv[1]
 presenter_name = sys.argv[2]
 n_processes = int(sys.argv[3])
 
-input_video_path = os.path.join(dataset_path, presenter_name, 'videos_crop')
+input_video_path = os.path.join(dataset_path, presenter_name, 'full_voice_25fps')
 output_video_path = os.path.join(dataset_path, presenter_name, 'videos_segment')
 if not os.path.exists(output_video_path):
     os.makedirs(output_video_path)
