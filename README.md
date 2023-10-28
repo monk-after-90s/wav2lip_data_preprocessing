@@ -23,22 +23,7 @@ your-folder-dataset
 
 ### 2. Run to crop video
 
-```bash
-python3 2_crop_video.py <your-folder-dataset> <presenter_name> <n_processes>
-```
-it will automatically create new folder name ***your-folder-dataset/videos_crop*** 
-
-the  folder structure: 
-```
-your-folder-dataset
-|---full_voice
-|---full_voice_25fps
-|---videos_crop
-|       video1.mp4
-|       video2.mp4
-|       ..........
-```
-
+skip to 3
 
 ### 3. Run to split each video into 10s videos
 
