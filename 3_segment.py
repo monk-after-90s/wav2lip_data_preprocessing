@@ -17,10 +17,10 @@ source_dir = os.listdir(input_video_path)
 
 def segment(name_video):
     video_path = os.path.join(input_video_path, name_video)
-    split_video_path = video_path.replace('videos_crop', 'videos_segment').replace('.mp4', '').replace('.MP4', '')
+    split_video_path = video_path.replace('full_voice_25fps', 'videos_segment').replace('.mp4', '').replace('.MP4', '')
     if not os.path.exists(split_video_path):
         os.makedirs(split_video_path)
-    split_audio_path = video_path.replace('videos_crop', 'audios_segment').replace('.mp4', '').replace('.MP4', '')
+    split_audio_path = video_path.replace('full_voice_25fps', 'audios_segment').replace('.mp4', '').replace('.MP4', '')
     if not os.path.exists(split_audio_path):
         os.makedirs(split_audio_path)
     command = f"ffmpeg -nostdin -y -i {video_path} 2>&1 | grep Duration | sed 's/Duration: \(.*\), start/\\1/g'"
