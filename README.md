@@ -3,7 +3,7 @@
 ### 1. Run convert video to standard 25 FPS
 assume dataset is located "your-folder-dataset"
 ```bash
-python3 1_convert_25fps.py <your-folder-dataset> <presenter_name> <n_processes>
+python3 1_convert_25fps.py <input_video_path> <output_video_path> <n_processes>
 ```
 it will automatically create new folder name ***your-folder-dataset/full_voice_25fps***
 
