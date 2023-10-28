@@ -148,7 +148,7 @@ your-folder-dataset
 ### 6. Correct audio with video (audio lenght less than video length after converting to 25fps)
 
 ```bash
-python3 6_au_sync.py <your-folder-dataset>
+python3 6_au_sync.py <your-folder-dataset> <presenter_name>
 ```
 it will automatically create new folder name ***your-folder-dataset/filelist/temp*** 
 
