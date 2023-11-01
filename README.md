@@ -1,4 +1,5 @@
 # Parallel Wav2Lip Data Preprocessing 
+## This repository is deprecated. Reference to [wav2lip_data_preprocess](https://github.com/monk-after-90s/wav2lip_data_preprocess/tree/master/syncnet_python)
 
 ### 1. Run convert video to standard 25 FPS
 assume dataset is located "your-folder-dataset"
